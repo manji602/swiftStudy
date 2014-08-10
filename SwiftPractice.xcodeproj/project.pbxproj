@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		241997B31997569F00F8B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997B21997569F00F8B302 /* AppDelegate.swift */; };
-		241997B51997569F00F8B302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997B41997569F00F8B302 /* ViewController.swift */; };
-		241997B81997569F00F8B302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241997B61997569F00F8B302 /* Main.storyboard */; };
 		241997BA1997569F00F8B302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241997B91997569F00F8B302 /* Images.xcassets */; };
 		241997C61997569F00F8B302 /* SwiftPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997C51997569F00F8B302 /* SwiftPracticeTests.swift */; };
+		24E531E31997903E00A2C02F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E531E21997903E00A2C02F /* SampleViewController.xib */; };
+		24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E531E41997905C00A2C02F /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,12 @@
 		241997AD1997569F00F8B302 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241997B11997569F00F8B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241997B21997569F00F8B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		241997B41997569F00F8B302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		241997B71997569F00F8B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		241997B91997569F00F8B302 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		241997BF1997569F00F8B302 /* SwiftPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241997C41997569F00F8B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241997C51997569F00F8B302 /* SwiftPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeTests.swift; sourceTree = "<group>"; };
+		24E531E21997903E00A2C02F /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		24E531E41997905C00A2C02F /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +75,8 @@
 		241997AF1997569F00F8B302 /* SwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				24E531DB199757A700A2C02F /* Controller */,
 				241997B21997569F00F8B302 /* AppDelegate.swift */,
-				241997B41997569F00F8B302 /* ViewController.swift */,
-				241997B61997569F00F8B302 /* Main.storyboard */,
 				241997B91997569F00F8B302 /* Images.xcassets */,
 				241997B01997569F00F8B302 /* Supporting Files */,
 			);
@@ -107,6 +106,15 @@
 				241997C41997569F00F8B302 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24E531DB199757A700A2C02F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24E531E21997903E00A2C02F /* SampleViewController.xib */,
+				24E531E41997905C00A2C02F /* SampleViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241997B81997569F00F8B302 /* Main.storyboard in Resources */,
+				24E531E31997903E00A2C02F /* SampleViewController.xib in Resources */,
 				241997BA1997569F00F8B302 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241997B51997569F00F8B302 /* ViewController.swift in Sources */,
 				241997B31997569F00F8B302 /* AppDelegate.swift in Sources */,
+				24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,17 +237,6 @@
 			targetProxy = 241997C01997569F00F8B302 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		241997B61997569F00F8B302 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				241997B71997569F00F8B302 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		241997C71997569F00F8B302 /* Debug */ = {
@@ -394,6 +391,7 @@
 				241997CB1997569F00F8B302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		241997CC1997569F00F8B302 /* Build configuration list for PBXNativeTarget "SwiftPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +400,7 @@
 				241997CE1997569F00F8B302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
