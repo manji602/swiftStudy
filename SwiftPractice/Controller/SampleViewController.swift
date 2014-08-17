@@ -11,8 +11,15 @@ import UIKit
 
 class SampleViewController: UIViewController {
     @IBOutlet var button:UIButton?
+    var _variableSample:variableSample?
     
     @IBAction func onClickButton() {
-        NSLog("clicked!")
+        initializeSamples()
+        
+        _variableSample?.sample()
+    }
+    
+    func initializeSamples() {
+        _variableSample = variableSample()
     }
 }

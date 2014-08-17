@@ -10,6 +10,7 @@
 		241997B31997569F00F8B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997B21997569F00F8B302 /* AppDelegate.swift */; };
 		241997BA1997569F00F8B302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241997B91997569F00F8B302 /* Images.xcassets */; };
 		241997C61997569F00F8B302 /* SwiftPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997C51997569F00F8B302 /* SwiftPracticeTests.swift */; };
+		249B8CAD19A093F4004D3533 /* variableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B8CAC19A093F4004D3533 /* variableSample.swift */; };
 		24E531E31997903E00A2C02F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E531E21997903E00A2C02F /* SampleViewController.xib */; };
 		24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E531E41997905C00A2C02F /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		241997BF1997569F00F8B302 /* SwiftPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241997C41997569F00F8B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241997C51997569F00F8B302 /* SwiftPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeTests.swift; sourceTree = "<group>"; };
+		249B8CAC19A093F4004D3533 /* variableSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = variableSample.swift; sourceTree = "<group>"; };
 		24E531E21997903E00A2C02F /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		24E531E41997905C00A2C02F /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		241997AF1997569F00F8B302 /* SwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				249B8CAB19A093E4004D3533 /* SwiftSamples */,
 				24E531DB199757A700A2C02F /* Controller */,
 				241997B21997569F00F8B302 /* AppDelegate.swift */,
 				241997B91997569F00F8B302 /* Images.xcassets */,
@@ -106,6 +109,14 @@
 				241997C41997569F00F8B302 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		249B8CAB19A093E4004D3533 /* SwiftSamples */ = {
+			isa = PBXGroup;
+			children = (
+				249B8CAC19A093F4004D3533 /* variableSample.swift */,
+			);
+			path = SwiftSamples;
 			sourceTree = "<group>";
 		};
 		24E531DB199757A700A2C02F /* Controller */ = {
@@ -217,6 +228,7 @@
 			files = (
 				241997B31997569F00F8B302 /* AppDelegate.swift in Sources */,
 				24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */,
+				249B8CAD19A093F4004D3533 /* variableSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
