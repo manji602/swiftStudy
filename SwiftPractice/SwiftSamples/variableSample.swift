@@ -11,7 +11,7 @@ import UIKit
 
 class variableSample {
     func sample() {
-        //
+        /* 変数・定数 */
         // 定数はletで定義する
         let CONSTANTS = 1
         // 変数はvarで定義する
@@ -32,7 +32,8 @@ class variableSample {
         let NUM_OF_APPLES: NSInteger = 5
         var appleSentence: String = "I have \(NUM_OF_APPLES) apples"
         println(appleSentence)
-        
+
+        /* 配列・連想配列 */
         // 配列は[]で定義する
         var arraySample = ["Lincle", "tricoro", "SPADA"]
         var currentIIDXVersion = arraySample[2]
@@ -51,5 +52,18 @@ class variableSample {
         var emptyArraySample2 = [] // 型を明示しない場合
         var emptyHashSample = [String: String]()
         var emptyHashSample2 = [:] // 型を明示しない場合
+        
+        /* optional value */
+        // 変数の型の後ろに?をつけるとoptional valueとして取り扱われる
+        var optionalString: String? = "this is optional value"
+        println (optionalString)  // Optional("this is optional value")と出力される
+        println (optionalString?) // Optional("this is optional value")と出力される
+        println (optionalString!) // this is optional valueと出力される
+        optionalString = nil // nilを代入可能
+        println (optionalString)
+        // ?をつけないとnilは代入できない
+        var notOptionalString: String = "this is not optional value"
+        // notOptionalString = nil // エラーになる
+        
     }
 }

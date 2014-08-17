@@ -11,6 +11,8 @@
 		241997BA1997569F00F8B302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241997B91997569F00F8B302 /* Images.xcassets */; };
 		241997C61997569F00F8B302 /* SwiftPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241997C51997569F00F8B302 /* SwiftPracticeTests.swift */; };
 		249B8CAD19A093F4004D3533 /* variableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B8CAC19A093F4004D3533 /* variableSample.swift */; };
+		249B8CAF19A09696004D3533 /* conditionalStatementSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B8CAE19A09696004D3533 /* conditionalStatementSample.swift */; };
+		249B8CB119A09F66004D3533 /* functionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B8CB019A09F66004D3533 /* functionSample.swift */; };
 		24E531E31997903E00A2C02F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E531E21997903E00A2C02F /* SampleViewController.xib */; };
 		24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E531E41997905C00A2C02F /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		241997C41997569F00F8B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241997C51997569F00F8B302 /* SwiftPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeTests.swift; sourceTree = "<group>"; };
 		249B8CAC19A093F4004D3533 /* variableSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = variableSample.swift; sourceTree = "<group>"; };
+		249B8CAE19A09696004D3533 /* conditionalStatementSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conditionalStatementSample.swift; sourceTree = "<group>"; };
+		249B8CB019A09F66004D3533 /* functionSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functionSample.swift; sourceTree = "<group>"; };
 		24E531E21997903E00A2C02F /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		24E531E41997905C00A2C02F /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				249B8CAC19A093F4004D3533 /* variableSample.swift */,
+				249B8CAE19A09696004D3533 /* conditionalStatementSample.swift */,
+				249B8CB019A09F66004D3533 /* functionSample.swift */,
 			);
 			path = SwiftSamples;
 			sourceTree = "<group>";
@@ -226,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249B8CAF19A09696004D3533 /* conditionalStatementSample.swift in Sources */,
 				241997B31997569F00F8B302 /* AppDelegate.swift in Sources */,
+				249B8CB119A09F66004D3533 /* functionSample.swift in Sources */,
 				24E531E51997905C00A2C02F /* SampleViewController.swift in Sources */,
 				249B8CAD19A093F4004D3533 /* variableSample.swift in Sources */,
 			);
