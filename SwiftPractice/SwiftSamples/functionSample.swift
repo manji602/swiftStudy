@@ -11,6 +11,7 @@ import Foundation
 class functionSample {
     func sample() {
         var greeting: String = functionSampleWithName("Bob", age: 20) // Swift公式ドキュメントと異なる部分、第二引数にはラベルを付けないといけない模様
+        // functionSampleWithName(name: "Bob", age: 20) // これだと怒られる
         println(greeting)
         
         var hash = functionSampleReturnsHash()
@@ -22,6 +23,15 @@ class functionSample {
         
         var sum = functionSampleWithVariableArray(1, 2, 3, 4)
         
+        functionSampleNest()
+
+        var returnFunction = functionSampleReturnsFunction1()
+
+        functionSampleReturnsFunction2()
+
+        functionSampleWithFunction(returnFunction)
+
+        functionSampleWithAnotherLabel(anotherLabel: "Hello")
         
         // mapのサンプル
         var numberArray1 = [ 1 ,2 ,3, 4 ]
@@ -84,5 +94,9 @@ class functionSample {
     func functionSampleWithFunction(function: String -> String) {
         var returnString: String = function("Hello")
         println(returnString)
+    }
+    // 引数のラベルに別名をつけることができる
+    func functionSampleWithAnotherLabel(anotherLabel label: String) {
+        println("anotherLabel " + label)
     }
 }
